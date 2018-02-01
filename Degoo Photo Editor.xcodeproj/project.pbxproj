@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F79854C0323D6951BA6EDD5 /* Pods_Degoo_Photo_Editor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551DC0BCA2CB81D5BBFB7148 /* Pods_Degoo_Photo_Editor.framework */; };
+		D566AB612020B5FC004B8355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D566AB582020B5FB004B8355 /* Assets.xcassets */; };
+		D566AB622020B5FC004B8355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D566AB5A2020B5FB004B8355 /* LaunchScreen.storyboard */; };
+		D566AB632020B5FC004B8355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D566AB5C2020B5FC004B8355 /* Main.storyboard */; };
+		D566AB642020B5FC004B8355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566AB5E2020B5FC004B8355 /* AppDelegate.swift */; };
+		D566AB662020B5FC004B8355 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D566AB602020B5FC004B8355 /* Info.plist */; };
+		D5858628202332B600431A50 /* ios_license.dms in Resources */ = {isa = PBXBuildFile; fileRef = D5858627202332B600431A50 /* ios_license.dms */; };
+		D585862A2023648500431A50 /* CustomCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58586292023648500431A50 /* CustomCameraViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		551DC0BCA2CB81D5BBFB7148 /* Pods_Degoo_Photo_Editor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Degoo_Photo_Editor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C6977D130A0DE2AB73B822 /* Pods-Degoo Photo Editor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Degoo Photo Editor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Degoo Photo Editor/Pods-Degoo Photo Editor.release.xcconfig"; sourceTree = "<group>"; };
+		D566AB582020B5FB004B8355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D566AB5B2020B5FB004B8355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D566AB5D2020B5FC004B8355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		D566AB5E2020B5FC004B8355 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D566AB602020B5FC004B8355 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5858627202332B600431A50 /* ios_license.dms */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ios_license.dms; sourceTree = "<group>"; };
+		D58586292023648500431A50 /* CustomCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraViewController.swift; sourceTree = "<group>"; };
+		D5C4C2922020A41300D90354 /* Degoo Photo Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Degoo Photo Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC6CF70D8635331C1EBD0C25 /* Pods-Degoo Photo Editor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Degoo Photo Editor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Degoo Photo Editor/Pods-Degoo Photo Editor.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5C4C28F2020A41300D90354 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F79854C0323D6951BA6EDD5 /* Pods_Degoo_Photo_Editor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A5400BFAD2489CD3CE07C5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC6CF70D8635331C1EBD0C25 /* Pods-Degoo Photo Editor.debug.xcconfig */,
+				86C6977D130A0DE2AB73B822 /* Pods-Degoo Photo Editor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D566AB592020B5FB004B8355 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				D566AB5A2020B5FB004B8355 /* LaunchScreen.storyboard */,
+				D566AB5C2020B5FC004B8355 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		D5C4C2892020A41300D90354 = {
+			isa = PBXGroup;
+			children = (
+				D5C4C2942020A41300D90354 /* Degoo Photo Editor */,
+				D5C4C2932020A41300D90354 /* Products */,
+				5A5400BFAD2489CD3CE07C5B /* Pods */,
+				F315018AC105E03A3DB847CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D5C4C2932020A41300D90354 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5C4C2922020A41300D90354 /* Degoo Photo Editor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5C4C2942020A41300D90354 /* Degoo Photo Editor */ = {
+			isa = PBXGroup;
+			children = (
+				D5858627202332B600431A50 /* ios_license.dms */,
+				D566AB5E2020B5FC004B8355 /* AppDelegate.swift */,
+				D566AB582020B5FB004B8355 /* Assets.xcassets */,
+				D566AB592020B5FB004B8355 /* Base.lproj */,
+				D566AB602020B5FC004B8355 /* Info.plist */,
+				D58586292023648500431A50 /* CustomCameraViewController.swift */,
+			);
+			path = "Degoo Photo Editor";
+			sourceTree = "<group>";
+		};
+		F315018AC105E03A3DB847CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				551DC0BCA2CB81D5BBFB7148 /* Pods_Degoo_Photo_Editor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5C4C2912020A41300D90354 /* Degoo Photo Editor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5C4C2A42020A41300D90354 /* Build configuration list for PBXNativeTarget "Degoo Photo Editor" */;
+			buildPhases = (
+				C125FAD6A54BFB0748EAE641 /* [CP] Check Pods Manifest.lock */,
+				D5C4C28E2020A41300D90354 /* Sources */,
+				D5C4C28F2020A41300D90354 /* Frameworks */,
+				D5C4C2902020A41300D90354 /* Resources */,
+				0903BEF077C11F9246F3E766 /* [CP] Embed Pods Frameworks */,
+				ACECDDE7729EC1CDB3DEBB4E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Degoo Photo Editor";
+			productName = "Degoo Photo Edito";
+			productReference = D5C4C2922020A41300D90354 /* Degoo Photo Editor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5C4C28A2020A41300D90354 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Degoo;
+				TargetAttributes = {
+					D5C4C2912020A41300D90354 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D5C4C28D2020A41300D90354 /* Build configuration list for PBXProject "Degoo Photo Editor" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5C4C2892020A41300D90354;
+			productRefGroup = D5C4C2932020A41300D90354 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5C4C2912020A41300D90354 /* Degoo Photo Editor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5C4C2902020A41300D90354 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5858628202332B600431A50 /* ios_license.dms in Resources */,
+				D566AB662020B5FC004B8355 /* Info.plist in Resources */,
+				D566AB632020B5FC004B8355 /* Main.storyboard in Resources */,
+				D566AB612020B5FC004B8355 /* Assets.xcassets in Resources */,
+				D566AB622020B5FC004B8355 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0903BEF077C11F9246F3E766 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Degoo Photo Editor/Pods-Degoo Photo Editor-frameworks.sh",
+				"${PODS_ROOT}/PhotoEditorSDK/pesdk-ios-build-8.2.3/PhotoEditorSDK.framework",
+				"${PODS_ROOT}/PhotoEditorSDK/pesdk-ios-build-8.2.3/PhotoEditorSDK.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhotoEditorSDK.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/PhotoEditorSDK.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Degoo Photo Editor/Pods-Degoo Photo Editor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACECDDE7729EC1CDB3DEBB4E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Degoo Photo Editor/Pods-Degoo Photo Editor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C125FAD6A54BFB0748EAE641 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Degoo Photo Editor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5C4C28E2020A41300D90354 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D585862A2023648500431A50 /* CustomCameraViewController.swift in Sources */,
+				D566AB642020B5FC004B8355 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D566AB5A2020B5FB004B8355 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D566AB5B2020B5FB004B8355 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D566AB5C2020B5FC004B8355 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D566AB5D2020B5FC004B8355 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5C4C2A22020A41300D90354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5C4C2A32020A41300D90354 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5C4C2A52020A41300D90354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC6CF70D8635331C1EBD0C25 /* Pods-Degoo Photo Editor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37CTP6754X;
+				INFOPLIST_FILE = "$(SRCROOT)/Degoo Photo Editor/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.assignment.Degoo-Photo-Editor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D5C4C2A62020A41300D90354 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86C6977D130A0DE2AB73B822 /* Pods-Degoo Photo Editor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37CTP6754X;
+				INFOPLIST_FILE = "$(SRCROOT)/Degoo Photo Editor/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.assignment.Degoo-Photo-Editor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5C4C28D2020A41300D90354 /* Build configuration list for PBXProject "Degoo Photo Editor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5C4C2A22020A41300D90354 /* Debug */,
+				D5C4C2A32020A41300D90354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5C4C2A42020A41300D90354 /* Build configuration list for PBXNativeTarget "Degoo Photo Editor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5C4C2A52020A41300D90354 /* Debug */,
+				D5C4C2A62020A41300D90354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5C4C28A2020A41300D90354 /* Project object */;
+}
