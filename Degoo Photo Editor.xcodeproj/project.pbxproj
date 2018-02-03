@@ -15,6 +15,8 @@
 		D566AB662020B5FC004B8355 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D566AB602020B5FC004B8355 /* Info.plist */; };
 		D5858628202332B600431A50 /* ios_license.dms in Resources */ = {isa = PBXBuildFile; fileRef = D5858627202332B600431A50 /* ios_license.dms */; };
 		D585862A2023648500431A50 /* CustomCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58586292023648500431A50 /* CustomCameraViewController.swift */; };
+		D58586302024A2B000431A50 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D585862E2024A2B000431A50 /* Fabric.framework */; };
+		D58586332026142600431A50 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58586322026142600431A50 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		D566AB602020B5FC004B8355 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5858627202332B600431A50 /* ios_license.dms */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ios_license.dms; sourceTree = "<group>"; };
 		D58586292023648500431A50 /* CustomCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraViewController.swift; sourceTree = "<group>"; };
+		D585862E2024A2B000431A50 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		D58586322026142600431A50 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		D5C4C2922020A41300D90354 /* Degoo Photo Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Degoo Photo Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6CF70D8635331C1EBD0C25 /* Pods-Degoo Photo Editor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Degoo Photo Editor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Degoo Photo Editor/Pods-Degoo Photo Editor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,6 +41,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F79854C0323D6951BA6EDD5 /* Pods_Degoo_Photo_Editor.framework in Frameworks */,
+				D58586332026142600431A50 /* Crashlytics.framework in Frameworks */,
+				D58586302024A2B000431A50 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +67,24 @@
 			path = Base.lproj;
 			sourceTree = "<group>";
 		};
+		D585862B20249E2800431A50 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D58586292023648500431A50 /* CustomCameraViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D585862C20249E5C00431A50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D566AB602020B5FC004B8355 /* Info.plist */,
+				D5858627202332B600431A50 /* ios_license.dms */,
+				D566AB582020B5FB004B8355 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		D5C4C2892020A41300D90354 = {
 			isa = PBXGroup;
 			children = (
@@ -82,12 +106,10 @@
 		D5C4C2942020A41300D90354 /* Degoo Photo Editor */ = {
 			isa = PBXGroup;
 			children = (
-				D5858627202332B600431A50 /* ios_license.dms */,
-				D566AB5E2020B5FC004B8355 /* AppDelegate.swift */,
-				D566AB582020B5FB004B8355 /* Assets.xcassets */,
+				D585862B20249E2800431A50 /* ViewControllers */,
+				D585862C20249E5C00431A50 /* Resources */,
 				D566AB592020B5FB004B8355 /* Base.lproj */,
-				D566AB602020B5FC004B8355 /* Info.plist */,
-				D58586292023648500431A50 /* CustomCameraViewController.swift */,
+				D566AB5E2020B5FC004B8355 /* AppDelegate.swift */,
 			);
 			path = "Degoo Photo Editor";
 			sourceTree = "<group>";
@@ -95,6 +117,8 @@
 		F315018AC105E03A3DB847CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D58586322026142600431A50 /* Crashlytics.framework */,
+				D585862E2024A2B000431A50 /* Fabric.framework */,
 				551DC0BCA2CB81D5BBFB7148 /* Pods_Degoo_Photo_Editor.framework */,
 			);
 			name = Frameworks;
@@ -113,6 +137,7 @@
 				D5C4C2902020A41300D90354 /* Resources */,
 				0903BEF077C11F9246F3E766 /* [CP] Embed Pods Frameworks */,
 				ACECDDE7729EC1CDB3DEBB4E /* [CP] Copy Pods Resources */,
+				D585862D2024A27F00431A50 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -226,6 +251,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		D585862D2024A27F00431A50 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 256cc9e0dc90d6879f8749936b58718551be9784 d8065820ff25efd862f04cbc8c3c1e565b0d99a6d91fe4b44ab27b61cdf94f98";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -376,7 +414,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37CTP6754X;
-				INFOPLIST_FILE = "$(SRCROOT)/Degoo Photo Editor/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Degoo Photo Editor/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.assignment.Degoo-Photo-Editor";
@@ -384,7 +426,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -396,14 +438,18 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37CTP6754X;
-				INFOPLIST_FILE = "$(SRCROOT)/Degoo Photo Editor/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Degoo Photo Editor/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.assignment.Degoo-Photo-Editor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
