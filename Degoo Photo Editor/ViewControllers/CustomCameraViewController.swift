@@ -8,9 +8,8 @@
 
 import UIKit
 import PhotoEditorSDK
+
 class CustomCameraViewController: UIViewController {
-    
-    final let degooBrandedColor:UIColor = UIColor(red: 25.0/255.0, green: 118.0/255.0, blue: 184.0/255.0, alpha: 1.0)
     
     override func viewDidAppear(_ animated: Bool) {
         presentCameraViewController()
@@ -25,7 +24,7 @@ class CustomCameraViewController: UIViewController {
                 // Just enable Photos
                 options.allowedRecordingModes = [.photo]
                 options.includeUserLocation = false
-                options.backgroundColor = degooBrandedColor;
+                options.backgroundColor = Colors.DegooBrandedColor;
                 options.photoActionButtonConfigurationClosure = {button in
                     button.tintColor = UIColor.white
                 }

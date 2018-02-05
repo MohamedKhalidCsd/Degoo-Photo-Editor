@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         // Activate Photo Editor SDK license
         if let licenseURL = Bundle.main.url(forResource: "ios_license", withExtension: "dms") {
             PESDK.unlockWithLicense(at: licenseURL)
