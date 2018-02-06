@@ -10,7 +10,7 @@
 		36AEBB412E42C2715EB2DC6D /* Pods_Edit_Photo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8837B4318610E63CB84694 /* Pods_Edit_Photo.framework */; };
 		D52B31AA20274EE200AE0A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D566AB582020B5FB004B8355 /* Assets.xcassets */; };
 		D52B31AF20275BA900AE0A2A /* Pods_Degoo_Photo_Editor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551DC0BCA2CB81D5BBFB7148 /* Pods_Degoo_Photo_Editor.framework */; };
-		D52B31B52027632600AE0A2A /* ios_license.dms in Resources */ = {isa = PBXBuildFile; fileRef = D52B31B42027632600AE0A2A /* ios_license.dms */; };
+		D52B31B52027632600AE0A2A /* ios_license_extension.dms in Resources */ = {isa = PBXBuildFile; fileRef = D52B31B42027632600AE0A2A /* ios_license_extension.dms */; };
 		D52B31B820278EB500AE0A2A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52B31B720278EB500AE0A2A /* Constants.swift */; };
 		D52B31B920278EB500AE0A2A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52B31B720278EB500AE0A2A /* Constants.swift */; };
 		D566AB612020B5FC004B8355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D566AB582020B5FB004B8355 /* Assets.xcassets */; };
@@ -57,7 +57,7 @@
 		9D174525F9B69069895E4A94 /* Pods-Edit Photo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Edit Photo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Edit Photo/Pods-Edit Photo.debug.xcconfig"; sourceTree = "<group>"; };
 		AF8837B4318610E63CB84694 /* Pods_Edit_Photo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Edit_Photo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2834277B5799B9BDF8C8EF6 /* Pods-Edit Photo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Edit Photo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Edit Photo/Pods-Edit Photo.release.xcconfig"; sourceTree = "<group>"; };
-		D52B31B42027632600AE0A2A /* ios_license.dms */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ios_license.dms; sourceTree = "<group>"; };
+		D52B31B42027632600AE0A2A /* ios_license_extension.dms */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ios_license_extension.dms; sourceTree = "<group>"; };
 		D52B31B720278EB500AE0A2A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D566AB582020B5FB004B8355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D566AB5B2020B5FB004B8355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 		D58586502027482600431A50 /* Edit Photo Extension */ = {
 			isa = PBXGroup;
 			children = (
-				D52B31B42027632600AE0A2A /* ios_license.dms */,
+				D52B31B42027632600AE0A2A /* ios_license_extension.dms */,
 				D58586512027482600431A50 /* ActionViewController.swift */,
 				D58586532027482600431A50 /* MainInterface.storyboard */,
 				D58586562027482600431A50 /* Info.plist */,
@@ -280,7 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D52B31B52027632600AE0A2A /* ios_license.dms in Resources */,
+				D52B31B52027632600AE0A2A /* ios_license_extension.dms in Resources */,
 				D52B31AA20274EE200AE0A2A /* Assets.xcassets in Resources */,
 				D58586552027482600431A50 /* MainInterface.storyboard in Resources */,
 			);

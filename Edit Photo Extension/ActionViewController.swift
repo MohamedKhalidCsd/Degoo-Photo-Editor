@@ -14,8 +14,8 @@ class ActionViewController: UIViewController, PhotoEditViewControllerDelegate {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Activate Photo Editor SDK license
-        if let licenseURL = Bundle.main.url(forResource: "ios_license", withExtension: "dms") {
+        // Activate Photo Editor SDK license For Extension
+        if let licenseURL = Bundle.main.url(forResource: "ios_license_extension", withExtension: "dms") {
             PESDK.unlockWithLicense(at: licenseURL)
         }
         handleImageFromExtensionContext();
