@@ -58,8 +58,10 @@ class ActionViewController: UIViewController, PhotoEditViewControllerDelegate {
         }
     }
     
+    // MARK: - Presentation
     func presentPhotoEditorController(photoAsset: Photo){
-        let photoEditViewController = PhotoEditViewController(photoAsset: photoAsset, configuration: buildConfiguration())
+        let configuration = buildConfiguration()
+        let photoEditViewController = PhotoEditViewController(photoAsset: photoAsset, configuration: configuration)
         photoEditViewController.delegate = self
         photoEditViewController.toolbar.backgroundColor = Colors.DegooBrandedPhotoEditorToolBarColor
         self.present(photoEditViewController, animated: false, completion: nil)
@@ -70,11 +72,18 @@ class ActionViewController: UIViewController, PhotoEditViewControllerDelegate {
         let configuration = Configuration() { builder in
             builder.configurePhotoEditorViewController({ (options) in
                 options.menuBackgroundColor = Colors.DegooBrandedColor
+                options.titleViewConfigurationClosure = { titleView in
+                    if let titleLabel = titleView as? UILabel {
+                        titleLabel.textColor = UIColor.white
+                        titleLabel.text = "Degoo-Editor"
+                    }
+                }
             })
         }
         return configuration
     }
     
+    // MARK: - UIImageWriteToSavedPhotosAlbum Completion Target
     func didSaveImage(photoEditViewController: PhotoEditViewController){
         let alert =  UIAlertController(title: "Great!", message: "Your edited photo successfully saved to Camera Roll", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { (alertAction) in

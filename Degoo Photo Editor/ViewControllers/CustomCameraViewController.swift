@@ -37,6 +37,10 @@ class CustomCameraViewController: UIViewController {
                 options.filterSelectorButtonConfigurationClosure = {button in
                     button.tintColor = UIColor.white
                 }
+                options.cameraRollButtonConfigurationClosure = { button in
+                    button.layer.borderWidth = 2.0
+                    button.layer.borderColor = UIColor.white.cgColor
+                }
             }
         }
         return configuration
