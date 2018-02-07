@@ -17,7 +17,6 @@
 		D566AB622020B5FC004B8355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D566AB5A2020B5FB004B8355 /* LaunchScreen.storyboard */; };
 		D566AB632020B5FC004B8355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D566AB5C2020B5FC004B8355 /* Main.storyboard */; };
 		D566AB642020B5FC004B8355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566AB5E2020B5FC004B8355 /* AppDelegate.swift */; };
-		D566AB662020B5FC004B8355 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D566AB602020B5FC004B8355 /* Info.plist */; };
 		D5858628202332B600431A50 /* ios_license.dms in Resources */ = {isa = PBXBuildFile; fileRef = D5858627202332B600431A50 /* ios_license.dms */; };
 		D585862A2023648500431A50 /* CustomCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58586292023648500431A50 /* CustomCameraViewController.swift */; };
 		D58586522027482600431A50 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58586512027482600431A50 /* ActionViewController.swift */; };
@@ -282,7 +281,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5858628202332B600431A50 /* ios_license.dms in Resources */,
-				D566AB662020B5FC004B8355 /* Info.plist in Resources */,
 				D566AB632020B5FC004B8355 /* Main.storyboard in Resources */,
 				D566AB612020B5FC004B8355 /* Assets.xcassets in Resources */,
 				D566AB622020B5FC004B8355 /* LaunchScreen.storyboard in Resources */,
