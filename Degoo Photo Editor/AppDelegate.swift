@@ -8,8 +8,6 @@
 
 import UIKit
 import PhotoEditorSDK
-import Fabric
-import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let licenseURL = Bundle.main.url(forResource: "ios_license", withExtension: "dms") {
             PESDK.unlockWithLicense(at: licenseURL)
         }
-        Fabric.with([Crashlytics.self])
         return true
     }
 
